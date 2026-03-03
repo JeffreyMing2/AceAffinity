@@ -2,6 +2,9 @@
 
 一款为 Windows 平台设计的轻量级进程调度优化工具，旨在通过隔离后台进程资源，为前台应用（如游戏）提供更流畅的性能体验。
 
+- **项目作者**: 明明Uncle
+- **项目地址**: [https://github.com/JeffreyMing2/AceAffinity](https://github.com/JeffreyMing2/AceAffinity)
+
 ## ✨ 主要功能
 
 - **CPU 亲和性控制**: 将指定进程的 CPU 亲和性（Affinity）绑定到单个或多个核心，以减少其对其他应用程序的性能影响。

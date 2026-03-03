@@ -2,6 +2,9 @@
 
 A lightweight process scheduling optimization tool for Windows, designed to provide a smoother performance experience for foreground applications (like games) by isolating background process resources.
 
+- **Author**: 明明Uncle
+- **Project URL**: [https://github.com/JeffreyMing2/AceAffinity](https://github.com/JeffreyMing2/AceAffinity)
+
 ## ✨ Core Features
 
 - **CPU Affinity Control**: Bind the CPU affinity of specified processes to one or more cores to reduce their performance impact on other applications.

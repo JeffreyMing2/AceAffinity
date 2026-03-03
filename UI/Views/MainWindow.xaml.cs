@@ -36,14 +36,14 @@ namespace AceAffinity.UI.Views
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void OptimizeButton_Click(object sender, RoutedEventArgs e)
         {
-            StatusTextBlock.Text = "Status: Optimizing...";
+            StatusTextBlock.Text = "状态: 正在优化...";
             
             // Read the process name from the TextBox.
             string processName = ProcessNameTextBox.Text;
 
             if (string.IsNullOrWhiteSpace(processName))
             {
-                StatusTextBlock.Text = "Status: Process name cannot be empty.";
+                StatusTextBlock.Text = "状态: 进程名称不能为空。";
                 return;
             }
 
@@ -51,11 +51,11 @@ namespace AceAffinity.UI.Views
 
             if (success)
             {
-                StatusTextBlock.Text = $"Status: Successfully optimized '{processName}'.";
+                StatusTextBlock.Text = $"状态: 成功优化进程 '{processName}'。";
             }
             else
             {
-                StatusTextBlock.Text = $"Status: Failed to optimize '{processName}'. (Is it running?)";
+                StatusTextBlock.Text = $"状态: 无法优化 '{processName}'。(该进程是否正在运行？)";
             }
         }
 

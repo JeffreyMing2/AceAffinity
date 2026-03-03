@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AceAffinity.UI.Views"
         mc:Ignorable="d"
-        Title="About ACE Affinity"
-        Height="300" Width="400"
+        Title="关于 ACE 进程隔离工具"
+        Height="320" Width="400"
         Background="White"
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize"
@@ -18,20 +18,26 @@
                 <TextBlock Text="ACE" Foreground="White" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Border>
 
-            <TextBlock Text="ACE Affinity" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,5"/>
-            <TextBlock Text="v1.0.0" Foreground="#999999" FontSize="12" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <TextBlock Text="ACE 进程资源隔离工具" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+            <TextBlock Text="版本 v1.0.0" Foreground="#999999" FontSize="12" HorizontalAlignment="Center" Margin="0,0,0,20"/>
 
-            <TextBlock Text="ACE Affinity is a lightweight process isolation tool designed to optimize system performance by adjusting process affinity and priority." 
-                       TextWrapping="Wrap" TextAlignment="Center" Foreground="#333333" Margin="0,0,0,20"/>
+            <TextBlock Text="ACE 进程资源隔离工具是一款轻量级的 Windows 性能优化工具，通过调整进程的亲和性和优先级来优化系统性能。" 
+                       TextWrapping="Wrap" TextAlignment="Center" Foreground="#333333" Margin="0,0,0,15"/>
 
-            <Separator Background="#EEEEEE" Margin="0,0,0,20"/>
+            <TextBlock FontSize="10" HorizontalAlignment="Center" Margin="0,0,0,15">
+                <Hyperlink NavigateUri="https://github.com/JeffreyMing2/AceAffinity" RequestNavigate="Hyperlink_RequestNavigate">
+                    项目地址: https://github.com/JeffreyMing2/AceAffinity
+                </Hyperlink>
+            </TextBlock>
+
+            <Separator Background="#EEEEEE" Margin="0,0,0,15"/>
 
             <StackPanel Orientation="Vertical">
-                <TextBlock Text="Developed by ACE Team" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,5"/>
-                <TextBlock Text="© 2026 ACE Team. All rights reserved." Foreground="#999999" FontSize="11" HorizontalAlignment="Center"/>
+                <TextBlock Text="作者: 明明Uncle" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+                <TextBlock Text="© 2026 明明Uncle. 保留所有权利。" Foreground="#999999" FontSize="11" HorizontalAlignment="Center"/>
             </StackPanel>
 
-            <Button Content="Close" Margin="0,20,0,0" Padding="20,5" HorizontalAlignment="Center" Click="CloseButton_Click"/>
+            <Button Content="关闭" Margin="0,20,0,0" Padding="20,5" HorizontalAlignment="Center" Click="CloseButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>

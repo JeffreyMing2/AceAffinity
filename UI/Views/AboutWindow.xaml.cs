@@ -1,5 +1,7 @@
 using System;
+using System.Diagnostics;
 using System.Windows;
+using System.Windows.Navigation;
 
 namespace AceAffinity.UI.Views
 {
@@ -24,6 +26,26 @@ namespace AceAffinity.UI.Views
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        /// <summary>
+        /// Handles the mouse click on the project URL to open it in a browser.
+        /// </summary>
+        private void Hyperlink_RequestNavigate(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string url = "https://github.com/JeffreyMing2/AceAffinity";
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"无法打开链接: {ex.Message}");
+            }
         }
     }
 }

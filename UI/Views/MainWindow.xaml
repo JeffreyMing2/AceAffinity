@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AceAffinity.UI.Views"
         mc:Ignorable="d"
-        Title="ACE Affinity - Process Isolation Tool"
+        Title="ACE 进程资源隔离优化工具"
         Height="280" Width="450"
         Background="#F3F3F3"
         WindowStartupLocation="CenterScreen">
@@ -21,7 +21,7 @@
             <DockPanel LastChildFill="True">
                 <Button x:Name="AboutButton" 
                         Content="?" 
-                        DockPanel.Alignment="Right"
+                        DockPanel.Dock="Right"
                         Width="24" Height="24" 
                         Background="Transparent" 
                         Foreground="White" 
@@ -29,15 +29,14 @@
                         FontSize="14" 
                         FontWeight="Bold"
                         Cursor="Hand"
-                        Click="AboutButton_Click"
-                        HorizontalAlignment="Right">
+                        Click="AboutButton_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="12"/>
                         </Style>
                     </Button.Resources>
                 </Button>
-                <TextBlock Text="ACE Process Isolation Tool" Foreground="White" FontSize="16" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                <TextBlock Text="ACE 进程资源隔离优化工具" Foreground="White" FontSize="16" FontWeight="SemiBold" VerticalAlignment="Center"/>
             </DockPanel>
         </Border>
 
@@ -52,12 +51,12 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Target Process:" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="Medium"/>
+                    <TextBlock Text="目标进程:" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="Medium"/>
                     <TextBox x:Name="ProcessNameTextBox" Grid.Column="1" Padding="8,5" Text="ACE-Tray" BorderBrush="#DDDDDD" BorderThickness="1"/>
                 </Grid>
 
                 <Button x:Name="OptimizeButton" 
-                        Content="Apply Optimization" 
+                        Content="应用优化策略" 
                         Padding="15,8" 
                         Background="#2196F3" 
                         Foreground="White" 
@@ -73,7 +72,7 @@
                 </Button>
 
                 <TextBlock x:Name="StatusTextBlock" 
-                           Text="Status: Idle" 
+                           Text="状态: 等待中" 
                            Margin="0,15,0,0" 
                            Foreground="#666666" 
                            HorizontalAlignment="Center" 
@@ -83,9 +82,9 @@
 
         <!-- Footer -->
         <Border Grid.Row="2" Padding="15,5,15,10">
-            <DockPanel>
+            <DockPanel LastChildFill="True">
+                <TextBlock Text="明明Uncle" DockPanel.Dock="Right" Foreground="#999999" FontSize="10" VerticalAlignment="Center"/>
                 <TextBlock Text="v1.0.0" Foreground="#999999" FontSize="10" VerticalAlignment="Center"/>
-                <TextBlock Text="ACE Team" Foreground="#999999" FontSize="10" HorizontalAlignment="Right" VerticalAlignment="Center"/>
             </DockPanel>
         </Border>
     </Grid>
