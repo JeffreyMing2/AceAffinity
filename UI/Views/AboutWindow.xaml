@@ -6,20 +6,21 @@
         xmlns:local="clr-namespace:AceAffinity.UI.Views"
         mc:Ignorable="d"
         Title="关于 ACE 进程隔离工具"
-        Height="320" Width="400"
+        Height="Auto" Width="450"
+        SizeToContent="Height"
         Background="White"
         Icon="../Assets/logo.png"
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize"
         WindowStyle="ToolWindow">
-    <Grid Margin="20">
+    <Grid Margin="25">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <!-- App Icon/Logo Placeholder -->
-            <Border Width="80" Height="80" CornerRadius="8" Margin="0,0,0,15">
+            <!-- App Icon/Logo Area -->
+            <Border Width="120" Height="120" CornerRadius="12" Margin="0,0,0,20">
                 <Border.Effect>
-                    <DropShadowEffect BlurRadius="5" ShadowDepth="1" Opacity="0.2"/>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.15"/>
                 </Border.Effect>
-                <Image Source="../Assets/logo.png" Stretch="Uniform"/>
+                <Image Source="../Assets/logo.png" Stretch="Uniform" RenderOptions.BitmapScalingMode="HighQuality"/>
             </Border>
 
             <TextBlock Text="ACE 进程资源隔离工具" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,5"/>
