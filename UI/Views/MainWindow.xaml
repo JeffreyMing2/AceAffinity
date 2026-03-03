@@ -1,9 +1,9 @@
-<Window x:Class="AceAffinity.MainWindow"
+<Window x:Class="AceAffinity.UI.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AceAffinity"
+        xmlns:local="clr-namespace:AceAffinity.UI.Views"
         mc:Ignorable="d"
         Title="AceAffinity"
         Height="200" Width="400">

@@ -6,13 +6,13 @@ namespace AceAffinity.Core.WinApiWrapper
     /// Provides P/Invoke wrappers for native Windows API functions.
     /// This class uses LibraryImport for better performance and is internal to the core assembly.
     /// </summary>
-    internal static partial class NativeMethods
+    public static partial class NativeMethods
     {
         /// <summary>
         /// Defines the access rights for opening a process object.
         /// </summary>
         [Flags]
-        internal enum ProcessAccessFlags : uint
+        public enum ProcessAccessFlags : uint
         {
             PROCESS_VM_OPERATION = 0x0008,
             PROCESS_VM_READ = 0x0010,
@@ -26,7 +26,7 @@ namespace AceAffinity.Core.WinApiWrapper
         /// <summary>
         /// Defines the priority classes for a process.
         /// </summary>
-        internal enum PriorityClass : uint
+        public enum PriorityClass : uint
         {
             IDLE_PRIORITY_CLASS = 64,
             BELOW_NORMAL_PRIORITY_CLASS = 16384,
