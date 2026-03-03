@@ -10,4 +10,8 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Resource Include="UI\Assets\logo.png" />
+  </ItemGroup>
+
 </Project>

@@ -8,6 +8,7 @@
         Title="ACE 进程资源隔离优化工具"
         Height="280" Width="450"
         Background="#F3F3F3"
+        Icon="../Assets/logo.png"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
