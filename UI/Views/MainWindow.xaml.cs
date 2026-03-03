@@ -58,5 +58,17 @@ namespace AceAffinity.UI.Views
                 StatusTextBlock.Text = $"Status: Failed to optimize '{processName}'. (Is it running?)";
             }
         }
+
+        /// <summary>
+        /// Handles the Click event of the AboutButton.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void AboutButton_Click(object sender, RoutedEventArgs e)
+        {
+            AboutWindow aboutWin = new AboutWindow();
+            aboutWin.Owner = this;
+            aboutWin.ShowDialog();
+        }
     }
 }
